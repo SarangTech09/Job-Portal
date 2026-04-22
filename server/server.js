@@ -22,7 +22,7 @@ app.get('/', (req, res)=> res.send("Api is working"));
 app.get("/debug-sentry", function mainHandler(req, res) {
     throw new Error("Sentry error test!");
 });
-app.post('/weebhooks', clerkWebhooks);
+app.post('/webhooks', clerkWebhooks);
 
 // Port
 const PORT = process.env.PORT || 5000
